@@ -21,7 +21,6 @@ cinst -y gitkraken
 
 ## Node, npm
 cinst -y nodejs.install
-npm install -g npm-windows-upgrade
 
 ## Editors
 cinst -y vscode
@@ -38,6 +37,7 @@ cinst -y vlc
 cinst -y foxitreader
 cinst -y ccleaner
 cinst -y GoogleChrome
+cinst -y firefox
 cinst -y 7zip.install
 cinst -y sysinternals
 if (Test-PendingReboot) { Invoke-Reboot }
