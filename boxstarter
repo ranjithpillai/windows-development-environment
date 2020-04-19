@@ -16,17 +16,27 @@ cinst -y poshgit
 $env:Path = [System.Environment]::GetEnvironmentVariable("Path","Machine") + ";" + [System.Environment]::GetEnvironmentVariable("Path","User")
 
 cinst Git-Credential-Manager-for-Windows
-cinst github
+cinst github-desktop
+cinst gitkraken
 
 ## Node, npm
 cinst -y nodejs.install
 npm install -g npm-windows-upgrade
 
 ## Editors
-cinst -y visualstudiocode
+cinst -y vscode
+cinst -y notepadplusplus
+
+## Dev Misc
+cinst cascadiacode
+cinst postman
+cinst fiddler
+cinst microsoft-windows-terminal
 
 ## Basics
 cinst -y vlc
+cinst -y foxitreader
+cinst -y ccleaner
 cinst -y GoogleChrome
 cinst -y 7zip.install
 cinst -y sysinternals
