@@ -15,9 +15,9 @@ cinst -y poshgit
 # Restart PowerShell / CMDer before moving on - or run
 $env:Path = [System.Environment]::GetEnvironmentVariable("Path","Machine") + ";" + [System.Environment]::GetEnvironmentVariable("Path","User")
 
-cinst Git-Credential-Manager-for-Windows
-cinst github-desktop
-cinst gitkraken
+cinst -y Git-Credential-Manager-for-Windows
+cinst -y github-desktop
+cinst -y gitkraken
 
 ## Node, npm
 cinst -y nodejs.install
@@ -28,10 +28,10 @@ cinst -y vscode
 cinst -y notepadplusplus
 
 ## Dev Misc
-cinst cascadiacode
-cinst postman
-cinst fiddler
-cinst microsoft-windows-terminal
+cinst -y cascadiacode
+cinst -y postman
+cinst -y fiddler
+cinst -y microsoft-windows-terminal
 
 ## Basics
 cinst -y vlc
